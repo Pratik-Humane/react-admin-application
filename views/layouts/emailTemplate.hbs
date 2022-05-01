@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>React Admin</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <style>
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body width="100%" bgcolor="#fff">
+    <div style="width: 100%; background: #fff;">
+
+        <table role="presentation" cellspacing="0" cellpadding="0" align="center" width="auto"
+            style="margin: auto; background:#fff; border:2px solid #5987bb;  font-size: 14px; font-family:arial;width:580px;"
+            class="email-container">
+            <!-- Email Header : BEGIN -->
+            <tr>
+                <td style="padding: 10px 0; background:#5987bb; text-align: center">
+                    <img src="{{process.env.API_URL}}/public/logo.png" aria-hidden="true" width="50"
+                        alt="logo" border="0"
+                        style="height: auto; background:#5987bb; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                </td>
+            </tr>
+            <!-- Email Header : END -->
+            <!-- Email Body : BEGIN -->
+            <tr>
+                <td style="padding: 20px 50px; text-align: left;color:#222;">
+                    <p>
+                        {{{body}}}
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 20px 50px; text-align: left;color:#222;">
+                    <p>
+                        Regards,<br>
+                        Team React Admin<br>
+                    </p>
+                </td>
+            </tr>
+            <!-- Email Body : END -->
+            <!-- Email Footer : BEGIN -->
+            <tr>
+                <td
+                    style="padding: 5px 10px;width: 100%; font-size: 12px; font-family: sans-serif; line-height:18px; border-top:1px solid #5987bb;  text-align: right; color: #fff; background:#5987bb">
+                    React Admin &copy; 2021
+                </td>
+            </tr>
+            <!-- Email Footer : END -->
+        </table>
+
+    </div>
+
+
+</body>
+
+</html>
